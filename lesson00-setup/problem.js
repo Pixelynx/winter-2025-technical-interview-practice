@@ -1,3 +1,5 @@
-function sayHello() {}
+const sayHello = () => {
+    return "Hello, World!";
+}
 
 module.exports = sayHello;
