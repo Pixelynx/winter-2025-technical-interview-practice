@@ -11,7 +11,10 @@
  * @returns {boolean} - True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str) {
-  // your code here
+  // [SOLUTION 1]
+  str = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  return str === str.split('').reverse().join('');
 }
+console.log(isPalindrome("race! Car"));
 
 module.exports = isPalindrome;

@@ -142,17 +142,11 @@ const starredShape = (n, m) => {
 
     // for(let i = 1; i <= n; i++) {
     //     for(let j = 1; j <= m; j++) {
-    //         if((i == 1) || (i == n)) {
-    //             shape += "*";
-    //         } else {
-    //             if(j == 1 || j == n) {
-    //                 shape += "*";
-    //             } else {
-    //                 shape += " ";
-    //             }
+    //         if((i == 1) || (i == n)) shape += "*"
+    //           else 
+    //             if(j == 1 || j == n) shape += "*"
+    //               else shape += " ";
     //         }
-    //     }
-
     //     if(i !== n) shape += "\n";
     // }
 
@@ -173,7 +167,7 @@ const starredShape = (n, m) => {
     */
 }
 
-// console.log(starredShape(5, 5));
+console.log(starredShape(5, 5));
 
 // 5,5 => *****
 //        *   *
