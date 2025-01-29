@@ -36,12 +36,17 @@ const stringMatching = (text, pattern) => {
   let indicies = [];
   let index = text.indexOf(pattern);
 
+  if(!text || !pattern) return [];
+
   while(index !== -1) {
     indicies.push(index);
     index = text.indexOf(pattern, index + 1);
   }
 
   return indicies;
+
+  // [SOLUTION regex]
+  
 }
 
 console.log(stringMatching("ababcababcabc", "abc"))
