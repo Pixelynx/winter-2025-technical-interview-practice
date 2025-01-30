@@ -21,9 +21,13 @@ function checkLargestElement(nums) {
         } else if(nums[i] > secondLargest) secondLargest = nums[i];
     }
 
-    return largest >= 2 * secondLargest ? largestIndex : -1;
+    return largest >= 2 * secondLargest ? largest : -1;
 }
 
-console.log(checkLargestElement([43, 54,2, 35, 67, 88]));
+console.log(checkLargestElement([1, 3, 9, 2]));
+
+// [1, 5, 3, 9, 2] => -1
+// [-7, -2, -5, -1] => 3
+// [-7, 5, -5, 1] => 1
 
 module.exports = checkLargestElement;
