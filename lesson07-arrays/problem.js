@@ -3,6 +3,14 @@
 // // removeDuplicates([1, 2, 3, 3, 4, 5]); // => [1, 2, 3, 4, 5]
 // // removeDuplicates([1, 1, 1, 1, 1, 1]); // => [1]
 // // removeDuplicates([1, 2, 3, 4, 5]); // => [1, 2, 3, 4, 5]
-module.exports = function removeDuplicates(arr) {
-  // your code here
+const removeDuplicates = (arr) => {
+  // [SOLUTION 2]
+  return [...new Set(arr)];
+
+  // [SOLUTION 1]
+  // return arr.filter((item, index) => arr.indexOf(item) === index);
 };
+
+console.log(removeDuplicates([1, 1, 1, 1, 1, 1]));
+
+module.exports = removeDuplicates;
