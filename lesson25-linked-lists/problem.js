@@ -1,4 +1,5 @@
-// Below we provided a partially completed linked list with the push and display method. Create the basic operations for a linked list
+// Below we provided a partially completed linked list with the push and display method. Create the basic 
+// operations for a linked list
 // get method
     // given an index return the node at that index
     // if the index is less than zero or greater or equal to the length return null
@@ -46,7 +47,11 @@ class LinkedList {
   }
 
   shift(){
-
+    if (!this.head) return undefined;
+    
+    if (this.head.next) {
+      let current = this.head
+    }
   }
 
   unshift(data){
