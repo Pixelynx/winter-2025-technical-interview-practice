@@ -1,16 +1,19 @@
 // Prompt 1: Pulling penguins from the front
 const pullPenguins = (penguins, count) => {
   // TODO: Implement the logic to pull 'count' number of penguins from the front of the line
+  return penguins.splice(0, count);
 };
 
 // Prompt 2: Removing the last penguin
 const removeLastPenguin = (penguins) => {
   // TODO: Implement the logic to remove the last penguin from the line
+  return penguins.pop();
 };
 
 // Prompt 3: Counting the penguins
 const countPenguins = (penguins) => {
   // TODO: Implement the logic to count the number of penguins in the line
+  return penguins.length;
 };
 
 // Example usage

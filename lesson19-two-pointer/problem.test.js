@@ -1,4 +1,4 @@
-const maxArea = require("./problem");
+const maxArea = require("./problem_");
 
 describe("maxArea", () => {
   test("should return the maximum area of water that can be contained", () => {

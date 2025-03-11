@@ -6,7 +6,10 @@
  * @returns {number} The sum of consecutive numbers from 1 to n.
  */
 function sumConsecutiveNumbers(n) {
-  // Your code here
+  return (n * (n + 1)/2);
 }
+
+console.log(sumConsecutiveNumbers(5)); // => 15
+console.log(sumConsecutiveNumbers(10)); // => 55
 
 module.exports = sumConsecutiveNumbers;

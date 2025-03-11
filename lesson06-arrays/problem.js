@@ -1,9 +1,9 @@
-// Prompt: Determine whether the largest element in the array is at least twice as much as every other number in the array. If it is, return the index of the largest element, or return -1 otherwise.
+// Prompt: Determine whether the largest element in the array is at least twice as much as every other number in the array. If it is, return the largest element, or return -1 otherwise.
 
 /**
  * Checks if the largest element in the array is at least twice as much as every other number.
  * @param {number[]} nums - The integer array.
- * @returns {number} - The index of the largest element if it meets the condition, otherwise -1.
+ * @returns {number} - The largest element if it meets the condition, otherwise -1.
  */
 
 function checkLargestElement(nums) {
@@ -29,5 +29,9 @@ console.log(checkLargestElement([1, 3, 9, 2]));
 // [1, 5, 3, 9, 2] => -1
 // [-7, -2, -5, -1] => 3
 // [-7, 5, -5, 1] => 1
+
+//one el
+// all equal
+// duplicates
 
 module.exports = checkLargestElement;
