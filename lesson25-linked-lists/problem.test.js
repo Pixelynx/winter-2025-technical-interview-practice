@@ -21,7 +21,7 @@ test("Get returns undefined if index is less than 0 or greater than or equal to 
 });
 test("Pop removes the last node in the list", () => {
   const list = createLinkedList();
-  expect(list.pop().data).toEqual(2);
+  expect(list.pop().data).toEqual(3);
 });
 test("Pop returns undefined if the list is empty", () => {
   const emptyList = new LinkedList();
@@ -29,7 +29,7 @@ test("Pop returns undefined if the list is empty", () => {
 });
 test("Shift removes the head of the list and returns the new head", () => {
   const list = createLinkedList();
-  expect(list.shift().data).toEqual(1);
+  expect(list.shift().data).toEqual(2);
 });
 test("Shift returns undefined if the list is empty", () => {
   const emptyList = new LinkedList();
